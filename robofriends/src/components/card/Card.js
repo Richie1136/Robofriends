@@ -1,9 +1,13 @@
-import React from 'react'
 
-const Card = () => {
-  return (
-    <div>Card</div>
-  )
-}
+const Card = () => (
+  <div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow5">
+    <h1>RoboFriends</h1>
+    <img src='' alt="Card img" height="200px" width="200px" />
+    <div>
+      <h2>Name </h2>
+      <p>Email</p>
+    </div>
+  </div>
+)
 
 export default Card
