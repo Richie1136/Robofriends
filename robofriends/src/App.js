@@ -1,14 +1,11 @@
-import Card from './components/card/Card'
+import CardList from './components/cardlist/CardList'
 import { robots } from './Robots'
 
-console.log(robots.name)
 
 const App = () => (
   <>
     <h1 className='tc bg-blue red'>RoboFriends</h1>
-    {robots.map((robot) => (
-      <Card key={robot.id} name={robot.name} email={robot.email} />
-    ))}
+    <CardList robots={robots} />
   </>
 )
 
