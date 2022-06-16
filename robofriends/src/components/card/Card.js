@@ -1,12 +1,15 @@
 
-const Card = ({ name, email }) => (
-  <div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow5">
-    <img src='' alt="Card img" height="200px" width="200px" />
-    <div>
-      <h2>{name} </h2>
-      <p>{email}</p>
+const Card = ({ name, email, id }) => (
+  <>
+    <div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5 tc">
+      <img src={`https://robohash.org/${id}`} alt="Card img" height="200px" width="200px" />
+      <div>
+        <h2>{name} </h2>
+        <p>{email}</p>
+        <h2>{id}</h2>
+      </div>
     </div>
-  </div>
+  </>
 )
 
 export default Card
