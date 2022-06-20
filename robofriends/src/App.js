@@ -2,6 +2,7 @@ import CardList from './components/cardlist/CardList'
 import { robots } from './Robots'
 import SearchBox from './components/searchbox/SearchBox'
 import { useState } from 'react'
+import './App.css'
 
 const App = () => {
   const [robot, setRobot] = useState(robots)
@@ -15,7 +16,7 @@ const App = () => {
 
   return (
     <>
-      <h1 className='tc bg-blue red'>RoboFriends</h1>
+      <h1 className='tc bg-blue black'>RoboFriends</h1>
       <SearchBox onSearchChange={onSearchChange} />
       <CardList robots={filtered} />
     </>
