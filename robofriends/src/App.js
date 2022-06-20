@@ -1,5 +1,4 @@
 import CardList from './components/cardlist/CardList'
-import { robots } from './Robots'
 import SearchBox from './components/searchbox/SearchBox'
 import { useState, useEffect } from 'react'
 import './App.css'
