@@ -3,10 +3,6 @@ import { robots } from './Robots'
 import SearchBox from './components/searchbox/SearchBox'
 import { useState } from 'react'
 
-console.log(robots)
-
-
-
 const App = () => {
   const [robot, setRobot] = useState(robots)
   const [searchField, setSearchField] = useState("")
@@ -15,13 +11,10 @@ const App = () => {
 
   const onSearchChange = (event) => {
     setSearchField(event.target.value)
-
   }
 
   return (
-
     <>
-
       <h1 className='tc bg-blue red'>RoboFriends</h1>
       <SearchBox onSearchChange={onSearchChange} />
       <CardList robots={filtered} />
